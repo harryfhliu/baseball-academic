@@ -12,7 +12,7 @@
   * { margin:0; padding:0; box-sizing:border-box; }
   body {
     font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
-    background: var(--bg); color: var(--text); line-height: 1.8;
+    background: var(--bg); color: var(--text); line-height: 1.8; font-size: 17px;
   }
   .container { max-width: 800px; margin:0 auto; padding: 20px; }
 
@@ -28,8 +28,8 @@
     background: var(--card); border-radius: 12px; padding: 28px; margin: 28px 0;
     box-shadow: 0 2px 8px rgba(0,0,0,0.04);
   }
-  .intro h2 { color: var(--dark); margin-bottom: 12px; border-bottom: 2px solid #eee; padding-bottom: 8px; }
-  .intro p { margin-bottom: 10px; color: var(--text); }
+  .intro h2 { font-size: 1.3em; color: var(--dark); margin-bottom: 12px; border-bottom: 2px solid #eee; padding-bottom: 8px; }
+  .intro p { margin-bottom: 10px; color: var(--text); font-size: 0.95em; }
 
   .card {
     background: var(--card); border-radius: 12px; padding: 24px; margin-bottom: 18px;
@@ -37,13 +37,13 @@
     transition: transform 0.15s;
   }
   .card:hover { transform: translateY(-2px); }
-  .card h3 { font-size: 1.1em; color: var(--dark); margin-bottom: 6px; }
+  .card h3 { font-size: 1.15em; color: var(--dark); margin-bottom: 6px; }
   .card h3 a { color: var(--dark); text-decoration: none; }
   .card h3 a:hover { color: var(--blue); }
-  .card .meta { font-size: 0.8em; color: var(--muted); margin-bottom: 8px; }
-  .card .desc { font-size: 0.9em; color: var(--text); }
+  .card .meta { font-size: 0.85em; color: var(--muted); margin-bottom: 8px; }
+  .card .desc { font-size: 0.95em; color: var(--text); }
   .card .tag {
-    display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 0.7em;
+    display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 0.75em;
     font-weight: 600; margin-right: 4px;
   }
   .tag-red { background:#f9d6d5; color:var(--red); }
@@ -53,9 +53,9 @@
   .stat-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(120px,1fr)); gap:10px; margin:20px 0; }
   .stat { background:var(--dark); color:white; border-radius:8px; padding:14px; text-align:center; }
   .stat .n { font-size:1.3em; font-weight:800; display:block; }
-  .stat .d { font-size:0.7em; opacity:0.85; margin-top:2px; }
+  .stat .d { font-size:0.75em; opacity:0.85; margin-top:2px; }
 
-  .footer { text-align:center; padding:32px 20px; color:var(--muted); font-size:0.8em; }
+  .footer { text-align:center; padding:32px 20px; color:var(--muted); font-size:0.85em; }
 
   @media (max-width:640px) {
     .container { padding:10px; }
@@ -87,7 +87,7 @@
   <div class="stat"><span class="n">⚾</span><span class="d">Pitch Smart 数据溯源</span></div>
 </div>
 
-<h2 style="margin: 24px 0 16px; color: var(--dark)">📄 文献研读报告</h2>
+<h2 style="margin: 24px 0 16px; color: var(--dark); font-size:1.25em">📄 文献研读报告</h2>
 
 <!-- DiFiori 2014 -->
 <div class="card">
@@ -129,10 +129,10 @@
   </div>
 </div>
 
-<h2 style="margin: 24px 0 16px; color: var(--dark)">📚 研读论文库</h2>
+<h2 style="margin: 24px 0 16px; color: var(--dark); font-size:1.25em">📚 研读论文库</h2>
 
 <div class="card" style="border-left-color: #8e44ad">
-  <table style="width:100%; border-collapse:collapse; font-size:0.85em;">
+  <table style="width:100%; border-collapse:collapse; font-size:0.9em;">
     <tr style="background:var(--dark);color:white">
       <th style="padding:8px 6px;text-align:left">论文</th><th>作者</th><th>期刊/年</th><th>被引</th><th>PDF</th>
     </tr>
