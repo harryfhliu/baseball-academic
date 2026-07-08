@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>棒球学术圈 — 於菟子Max爱棒球</title>
+<style>
+  :root {
+    --dark: #1a1a2e; --red: #c0392b; --blue: #2980b9; --gold: #b8860b;
+    --bg: #fafafa; --card: #fff; --text: #2c3e50; --muted: #7f8c8d;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg); color: var(--text); line-height: 1.8;
+  }
+  .container { max-width: 800px; margin:0 auto; padding: 20px; }
+
+  .hero {
+    background: linear-gradient(135deg, var(--dark), #2c3e50);
+    color: white; padding: 60px 32px; text-align: center; border-radius: 0 0 16px 16px;
+  }
+  .hero h1 { font-size: 2em; font-weight: 800; margin-bottom: 8px; }
+  .hero .sub { font-size: 1em; opacity: 0.85; }
+  .hero .tagline { margin-top: 16px; font-size: 0.9em; color: var(--gold); }
+
+  .intro {
+    background: var(--card); border-radius: 12px; padding: 28px; margin: 28px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  .intro h2 { color: var(--dark); margin-bottom: 12px; border-bottom: 2px solid #eee; padding-bottom: 8px; }
+  .intro p { margin-bottom: 10px; color: var(--text); }
+
+  .card {
+    background: var(--card); border-radius: 12px; padding: 24px; margin-bottom: 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04); border-left: 4px solid var(--blue);
+    transition: transform 0.15s;
+  }
+  .card:hover { transform: translateY(-2px); }
+  .card h3 { font-size: 1.1em; color: var(--dark); margin-bottom: 6px; }
+  .card h3 a { color: var(--dark); text-decoration: none; }
+  .card h3 a:hover { color: var(--blue); }
+  .card .meta { font-size: 0.8em; color: var(--muted); margin-bottom: 8px; }
+  .card .desc { font-size: 0.9em; color: var(--text); }
+  .card .tag {
+    display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 0.7em;
+    font-weight: 600; margin-right: 4px;
+  }
+  .tag-red { background:#f9d6d5; color:var(--red); }
+  .tag-blue { background:#d4e6f1; color:var(--blue); }
+  .tag-green { background:#d5f5e3; color:#27ae60; }
+
+  .stat-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(120px,1fr)); gap:10px; margin:20px 0; }
+  .stat { background:var(--dark); color:white; border-radius:8px; padding:14px; text-align:center; }
+  .stat .n { font-size:1.3em; font-weight:800; display:block; }
+  .stat .d { font-size:0.7em; opacity:0.85; margin-top:2px; }
+
+  .footer { text-align:center; padding:32px 20px; color:var(--muted); font-size:0.8em; }
+
+  @media (max-width:640px) {
+    .container { padding:10px; }
+    .hero { padding:40px 16px; }
+    .hero h1 { font-size:1.4em; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>⚾ 棒球学术圈</h1>
+  <div class="sub">青少年棒球投手训练与损伤预防 — 文献研读与分析</div>
+  <div class="tagline">编者：於菟子Max爱棒球</div>
+</div>
+
+<div class="container">
+
+<div class="intro">
+  <h2>📖 关于本站</h2>
+  <p>这里汇集了青少年棒球投手训练和损伤预防领域核心文献的深度研读笔记。每一篇都经过仔细阅读、数据提取和整合分析，力求将顶级学术论文的精华转化为教练、家长和球员可实际应用的训练洞见。</p>
+  <p>研究范围涵盖 <strong>流行病学、生物力学、负荷管理、预防方案</strong> 四大主题，数据来源包括 AMSSM、ASMI、IOC 等权威机构的立场声明和原创研究。</p>
+</div>
+
+<div class="stat-grid">
+  <div class="stat"><span class="n">6 篇</span><span class="d">核心文献研读</span></div>
+  <div class="stat"><span class="n">3 篇</span><span class="d">深度综述HTML报告</span></div>
+  <div class="stat"><span class="n">1300+</span><span class="d">总被引量覆盖</span></div>
+  <div class="stat"><span class="n">⚾</span><span class="d">Pitch Smart 数据溯源</span></div>
+</div>
+
+<h2 style="margin: 24px 0 16px; color: var(--dark)">📄 文献研读报告</h2>
+
+<!-- DiFiori 2014 -->
+<div class="card">
+  <h3><a href="papers/DiFiori_2014_AMSSM.html">AMSSM 立场声明：青少年运动过度使用损伤与倦怠</a></h3>
+  <div class="meta">DiFiori JP et al. · BJSM/CJSM 2014 · 被引 786 次</div>
+  <div class="desc">AMSSM 七位专家系统检索 953 篇文献后撰写的官方立场声明。涵盖过度使用损伤的风险因素体系、运动专项化争议、运动准备度概念、高风险应力性骨折和骨骺损伤识别，以及基于 SORT 分级系统的预防建议。</div>
+  <div class="meta" style="margin-top:8px">
+    <span class="tag tag-red">AMSSM</span><span class="tag tag-blue">SORT分级</span><span class="tag tag-green">运动专项化</span>
+  </div>
+</div>
+
+<!-- Melugin 2018 -->
+<div class="card">
+  <h3><a href="papers/Melugin_2018_Baseball.html">棒球损伤预防：从青少年到职业</a></h3>
+  <div class="meta">Melugin HP et al. · Curr Rev Musculoskelet Med 2018 · 被引 66 次</div>
+  <div class="desc">★★★★★ 最直接相关的综述。系统梳理了从青少年到职业棒球损伤流行病学的差异，提出"不同级别需要不同的预防策略"。详述了横滨棒球-9（YKB-9）预防方案和 Nordic 腘绳肌训练的循证依据。</div>
+  <div class="meta" style="margin-top:8px">
+    <span class="tag tag-red">最直接相关</span><span class="tag tag-blue">YKB-9</span><span class="tag tag-green">分级预防</span>
+  </div>
+</div>
+
+<!-- Lyman Review -->
+<div class="card">
+  <h3><a href="papers/Lyman_Review.html">青少年棒球投球疼痛的循证先驱：Lyman 两篇奠基性研究综述</a></h3>
+  <div class="meta">Lyman S et al. · MSSE 2001 + AJSM 2002 · 合计被引 1300+ 次</div>
+  <div class="desc">ASMI 铁三角（Lyman×Fleisig×Andrews）的奠基性工作。首次用纵向队列追踪了 298 名投手的疼痛模式，随后扩大至 476 人进行球种×球数×机制的三维独立分析。这是 MLB Pitch Smart 指南的原始数据基础。</div>
+  <div class="meta" style="margin-top:8px">
+    <span class="tag tag-red">Pitch Smart起源</span><span class="tag tag-blue">被引1300+</span><span class="tag tag-green">曲球伤肩·滑球伤肘</span>
+  </div>
+</div>
+
+<h2 style="margin: 24px 0 16px; color: var(--dark)">📚 研读论文库</h2>
+
+<div class="card" style="border-left-color: #8e44ad">
+  <table style="width:100%; border-collapse:collapse; font-size:0.85em;">
+    <tr style="background:var(--dark);color:white">
+      <th style="padding:8px 6px;text-align:left">论文</th><th>作者</th><th>期刊/年</th><th>被引</th><th>PDF</th>
+    </tr>
+    <tr>
+      <td style="padding:8px 6px"><strong>AMSSM Overuse Injuries & Burnout</strong></td>
+      <td style="padding:8px 4px;font-size:0.85em">DiFiori JP et al.</td>
+      <td style="padding:8px 4px;font-size:0.8em">BJSM 2014</td>
+      <td style="padding:8px 4px;text-align:center;font-weight:bold;color:var(--red)">786</td>
+      <td style="padding:8px 4px;text-align:center"><a href="papers/pdf/01_Overuse_Injuries_Burnout_Youth_Sports_DiFiori_2014.pdf">📄</a></td>
+    </tr>
+    <tr style="background:#f8f9fa">
+      <td style="padding:8px 6px"><strong>Injury Prevention in Baseball</strong></td>
+      <td style="padding:8px 4px;font-size:0.85em">Melugin HP et al.</td>
+      <td style="padding:8px 4px;font-size:0.8em">CRMM 2018</td>
+      <td style="padding:8px 4px;text-align:center;font-weight:bold;color:var(--blue)">66</td>
+      <td style="padding:8px 4px;text-align:center"><a href="papers/pdf/02_Injury_Prevention_Baseball_Youth_to_Pros_Melugin_2018.pdf">📄</a></td>
+    </tr>
+    <tr>
+      <td style="padding:8px 6px"><strong>Training-Injury Prevention Paradox</strong></td>
+      <td style="padding:8px 4px;font-size:0.85em">Gabbett TJ</td>
+      <td style="padding:8px 4px;font-size:0.8em">BJSM 2016</td>
+      <td style="padding:8px 4px;text-align:center;font-weight:bold;color:var(--red)">1530</td>
+      <td style="padding:8px 4px;text-align:center"><a href="papers/pdf/03_Training_Injury_Prevention_Paradox_Gabbett_2016.pdf">📄</a></td>
+    </tr>
+    <tr style="background:#f8f9fa">
+      <td style="padding:8px 6px"><strong>YKB-9 Prevention Program</strong></td>
+      <td style="padding:8px 4px;font-size:0.85em">Sakata J et al.</td>
+      <td style="padding:8px 4px;font-size:0.8em">AJSM 2017</td>
+      <td style="padding:8px 4px;text-align:center;font-weight:bold;color:var(--blue)">60</td>
+      <td style="padding:8px 4px;text-align:center"><a href="papers/pdf/sakata2017.pdf">📄</a></td>
+    </tr>
+    <tr>
+      <td style="padding:8px 6px"><strong>Lyman 2001 — Elbow & Shoulder Pain</strong></td>
+      <td style="padding:8px 4px;font-size:0.85em">Lyman S et al.</td>
+      <td style="padding:8px 4px;font-size:0.8em">MSSE 2001</td>
+      <td style="padding:8px 4px;text-align:center;font-weight:bold;color:var(--red)">549</td>
+      <td style="padding:8px 4px;text-align:center"><a href="papers/pdf/Lyman_2001_Longitudinal_Elbow_Shoulder_Pain.pdf">📄</a></td>
+    </tr>
+    <tr style="background:#f8f9fa">
+      <td style="padding:8px 6px"><strong>Lyman 2002 — Pitch Type/Count/Mechanics</strong></td>
+      <td style="padding:8px 4px;font-size:0.85em">Lyman S et al.</td>
+      <td style="padding:8px 4px;font-size:0.8em">AJSM 2002</td>
+      <td style="padding:8px 4px;text-align:center;font-weight:bold;color:var(--red)">769</td>
+      <td style="padding:8px 4px;text-align:center"><a href="papers/pdf/Lyman_2002_Pitch_Type_Count_Mechanics.pdf">📄</a></td>
+    </tr>
+  </table>
+</div>
+
+</div>
+
+<div class="footer">
+  <p>本站内容仅供学术交流与运动科普使用，原始文献版权归属各出版商及作者。</p>
+  <p>© 2026 於菟子Max爱棒球 · 基于 GitHub Pages 构建</p>
+</div>
+
+</body>
+</html>
