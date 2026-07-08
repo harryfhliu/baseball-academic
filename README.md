@@ -14,7 +14,7 @@
 │   ├── Lyman_Review.html            Lyman 2001&2002 研究综述
 │   ├── images_melugin2018/          论文原图（横滨棒球-9 / Nordic 训练图示）
 │   └── pdf/                         原始论文 PDF（6 篇，每篇报告底部提供下载）
-└── slides/                 ← PPT 演示文稿（9:16 竖版）
+└── README.md
 ```
 
 ## 🔬 研读文献
@@ -30,8 +30,6 @@
 
 ## 🚀 部署
 
-1. 在 GitHub 创建仓库 `baseball-academic`（Public，不勾选 README）
-2. `git remote add origin git@github.com:harryfhliu/baseball-academic.git`
-3. `git add -A && git commit -m "Initial site" && git push -u origin main`
-4. Settings → Pages → Source: `main` branch → Save
-5. 访问 `https://harryfhliu.github.io/baseball-academic/`
+1. 在 GitHub 创建仓库 `baseball-academic`（Public）
+2. Settings → Pages → Source: `main` branch → Save
+3. 访问 `https://harryfhliu.github.io/baseball-academic/`
